@@ -36,7 +36,7 @@ function signup() {
             //6-hide alert
             alertValid.classList.replace("d-block", "d-none")
             //7-link to login
-            window.location.href = "login.html"
+            window.location.href = "index.html"
         }
     } else {
         alertValid.classList.replace("d-none", "d-block")

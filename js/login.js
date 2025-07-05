@@ -25,7 +25,7 @@ function signIn() {
             //4-store local storage name
             localStorage.setItem("userName", userCheck.name)
             //5-link
-            window.location.href = "index.html"
+            window.location.href = "home.html"
 
         } else {
             alertLogin.classList.replace("d-none", "d-block")
@@ -40,7 +40,7 @@ function signIn() {
 loginEmail.addEventListener("blur", () => {
     validation(emailRegex, loginEmail)
 })
-loginPassword.addEventListener("blur", (e) => {
+loginPassword.addEventListener("blur", () => {
     validation(passRegex, loginPassword)
 })
 function validation(regex, input) {
@@ -51,7 +51,6 @@ function validation(regex, input) {
     } else {
         input.classList.add("is-invalid")
         input.classList.remove("is-valid")
-
         return false
     }
 }
