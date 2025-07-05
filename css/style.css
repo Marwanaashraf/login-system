@@ -1,0 +1,75 @@
+:root {
+    --main_color: #24353F;
+    --headers: #17A2B8;
+}
+
+::placeholder {
+    color: #B6B6B6 !important;
+
+}
+
+body {
+    background-color: var(--main_color);
+}
+
+.form {
+    background-color: var(--main_color);
+    width: 60%;
+    height: 450px;
+    box-shadow: 3px 3px 15px 10px rgba(0, 0, 0, 0.241);
+}
+
+.form h1 {
+    color: var(--headers);
+}
+
+.form-control:focus {
+    border: 1px solid var(--headers) !important;
+    box-shadow: none;
+}
+
+input {
+    width: 95% !important;
+}
+
+.submit {
+    width: 95%;
+}
+
+.btn-outline-info:hover {
+    color: white !important;
+}
+
+.submit:hover {
+    background-color: #17A2B8;
+    color: white;
+}
+
+.link {
+    color: #17A2B8 !important;
+}
+
+.link:hover {
+    text-decoration: underline !important;
+}
+
+.logo h2 {
+    color: var(--headers);
+}
+
+.links a {
+    font-size: 20px;
+    transition: all 1s;
+}
+
+.links a:hover {
+    color: var(--headers) !important;
+}
+
+.welcome {
+    height: 150px;
+}
+
+.welc-name {
+    color: var(--headers);
+}
